@@ -1,0 +1,15 @@
+services:
+  spring:
+    container_name: spring
+    image: ghcr.io/shair13/flight-manager-spring:v1
+    restart: always
+    ports:
+    - "8080:8080"
+
+  react:
+    container_name: react
+    image: ghcr.io/shair13/flight-manager-react:v1
+    ports:
+      - 3000:3000
+    depends_on:
+      - spring
