@@ -1,0 +1,6 @@
+[submodule "flight-manager-spring"]
+	path = flight-manager-spring
+	url = https://github.com/Shair13/flight-manager-spring.git
+[submodule "flight-manager-react"]
+	path = flight-manager-react
+	url = https://github.com/Shair13/flight-manager-react.git
