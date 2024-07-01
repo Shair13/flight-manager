@@ -51,8 +51,7 @@ It allows you to add and remove flights and passengers, as well as manage passen
 
 ![All flights](images/all_flights.png)
 
-## In the flight details, you can add passengers and update the current flight.
-## Below, you will see all passengers on this flight, and you can remove them by clicking the "X" button.
+## In the flight details, you can add passengers and update the current flight. Below, you will see all passengers on this flight, and you can remove them by clicking the "X" button.
 
 ![Flight details](images/flight_details.png)
 
