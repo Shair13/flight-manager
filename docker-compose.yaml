@@ -4,12 +4,19 @@ services:
     image: ghcr.io/shair13/flight-manager-spring:v1
     restart: always
     ports:
-    - "8080:8080"
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   react:
     container_name: react
     image: ghcr.io/shair13/flight-manager-react:v1
+    restart: always
     ports:
-      - 3000:3000
+      - "3000:3000"
     depends_on:
-      - spring
+      spring:
+        condition: service_healthy
